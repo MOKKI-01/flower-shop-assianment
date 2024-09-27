@@ -13,7 +13,7 @@ p {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
 }
 
 button {
@@ -23,10 +23,12 @@ button {
     color: white;
     font-size: 20px;
     padding: 15px 30px;
+    cursor: pointer;
+    transition: all 1s;
 }
 
-header {
-    background: rgba(229, 84, 115, 0.1);
+button:hover {
+    background: rgb(139, 194, 58);
 }
 
 .container {
@@ -35,15 +37,39 @@ header {
     margin: 0 auto;
 }
 
+.section-heading {
+    max-width: 500px;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.section-heading h2 {
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 15px;
+}
+
+header,
+#hot-deal {
+    background: rgba(229, 84, 115, 0.1);
+}
+
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .banner .banner-texts * {
     margin-bottom: 32px;
     max-width: 525px;
 }
+
 .banner .banner-texts h1 {
     color: rgb(39, 39, 39);
     font-family: Lato;
@@ -53,8 +79,195 @@ header {
     letter-spacing: 0%;
     text-align: left;
 }
+
 .banner .banner-img img {
     width: 100%;
     vertical-align: middle;
+}
 
+#featured {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+
+.section-content .flower .flower-image {
+    border-radius: 300px 300px 0px 0px;
+    background-color: bisque;
+    padding: 30px 25px 0;
+    display: flex;
+    align-items: end;
+}
+
+.section-content .flower .flower-image img {
+    width: 100%;
+}
+
+.section-content .flower .pink {
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.section-content .flower .blue {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+.section-content .flower .grey {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+.section-content .flower p {
+    color: rgb(39, 39, 39);
+    margin: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+#icon {
+    margin: 128px auto;
+}
+
+.section-content .vector p {
+    color: rgba(39, 39, 39, 0.8);
+    /* margin: 15px; */
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.section-content .vector {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+}
+
+.section-vector {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(39, 39, 39, 0.05);
+    gap: 20px;
+    border-radius: 8px;
+    padding: 85px 100px;
+    text-align: center;
+}
+
+.hot-deal-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+#hot-deal .hot-deal-text {
+    width: 75%;
+    max-width: 550px;
+    text-align: center;
+}
+
+#hot-deal .hot-deal-text * {
+    margin-bottom: 24px;
+}
+
+#hot-deal .hot-deal-text h2 {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+#hot-deal .hot-deal-img {
+    max-width: 318px;
+}
+
+#hot-deal .hot-deal-text h2 .important {
+    color: rgb(229, 84, 115);
+}
+
+#instagram {
+    margin: 128px 0;
+}
+
+.insta {
+    display: flex;
+    gap: 24px;
+}
+
+.insta-img img {
+    width: 100%;
+    max-width: 255px;
+    max-height: 297px;
+}
+
+#newsletter {
+    margin: 128px;
+}
+
+.container-newsletter-main {
+    background-image: url('../images/Rectangle\ 9.png');
+    padding: 122px 0;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+}
+
+#newsletter form {
+    display: flex;
+    margin: 20px auto;
+    max-width: 800px;
+    gap: 10px;
+}
+#newsletter form input {
+    flex-grow: 1;
+    border: none;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+#end {
+    margin-top: 128px;
+    background-color: rgb(17, 16, 16);
+}
+
+.section-footer {
+    max-width: 500px;
+    align-items: center;
+    margin: 20px auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 48px;
+}
+.section-footer .wow {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.section-footer .needed {
+    color: rgb(229, 84, 115);
+}
+.container-end-main {
+    padding: 128px;
+}
+.container-end-main * {
+    margin-bottom: 24px;
+}
+small {
+    font-size: 16px;
 }
